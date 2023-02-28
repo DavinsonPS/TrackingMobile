@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <Button
-        android:text="Iniciar sesión"
-        android:layout_width="wrap_content"
+    android:minHeight="25px"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="TRACKING II"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        android:id="@+id/textView1"/>
 
-    
+    <TextView
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserName" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="176.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUser" />
+
+    <TextView
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="177.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPass" />
 
 
-</RelativeLayout>
+    <Button
+        android:text="Login"
+        android:layout_width="178.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginRight="92.5dp" />
+
+    <Button
+        android:text="Create account"
+        android:layout_width="177.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreateAcount" />
+
+</LinearLayout>
+
