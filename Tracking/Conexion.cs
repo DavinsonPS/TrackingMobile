@@ -4,8 +4,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using SQLite;
 using System;
+using SQLite;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,21 +13,19 @@ using System.Text;
 
 namespace Tracking
 {
-    internal class Conexion { }
-    
-
     public class Login
-        {
-      public Login() { }
-      [PrimaryKey, AutoIncrement]
+    {
+        public Login() { }
 
-      public int Id { get; set; }
-      [MaxLength(50)]
+        [PrimaryKey, AutoIncrement]
 
-      public string UserName { get; set; }
-      [MaxLength(20)]
+        public int Id { get; set; }
+        [MaxLength(50)]
 
-      public string Password { get; set; }
+        public string UserName { get; set; }
+        [MaxLength(20)]
+
+        public string Password { get; set; }
     }
 
     public class Auxiliar
@@ -62,7 +60,7 @@ namespace Tracking
             }
         }
         //Seleccionar un registro
-        public Login Seleccionar(string userName, string password)
+        public Login SeleccionarUno(string userName, string password)
         {
             lock (locker)
             {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android ="http://schemas.android.com/apk/res/android">
+	<item
+	  android:id="@+id/icAdd"
+	  android:title="Agregar" />
+	<item
+	  android:id="@+id/icAdd2"
+	  android:title="OC" />
+	<item
+	  android:id="@+id/icAdd3"
+	  android:title="Proveedores" />
+	<item
+	  android:id="@+id/icAdd4"
+	  android:title="Vender" />
+	<item
+	  android:id="@+id/icAdd5"
+	  android:title="Productos" />
+	<item
+	  android:id="@+id/icAdd6"
+	  android:title="Contac" />
+</menu>
