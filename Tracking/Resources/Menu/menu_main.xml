@@ -2,7 +2,7 @@
 <menu xmlns:android ="http://schemas.android.com/apk/res/android">
 	<item
 	  android:id="@+id/icAdd"
-	  android:title="Agregar" />
+	  android:title="New Users" />
 	<item
 	  android:id="@+id/icAdd2"
 	  android:title="OC" />

@@ -67,6 +67,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="contact.cs" />
     <Compile Include="Create_OC.cs" />
+    <Compile Include="Notification.cs" />
     <Compile Include="Productos.cs" />
     <Compile Include="Proveedores.cs" />
     <Compile Include="Ventas.cs" />
@@ -154,6 +155,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Productos.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Notifications.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

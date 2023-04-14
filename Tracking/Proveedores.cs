@@ -23,6 +23,7 @@ namespace Tracking
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Proveedores);
             txtNitProveedor = FindViewById<EditText>(Resource.Id.txtNitProveedor);
             Nombre = FindViewById<EditText>(Resource.Id.txtNameProv);
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
@@ -38,24 +39,24 @@ namespace Tracking
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Toast.MakeText(this, "Funciona el botón Add", ToastLength.Short).Show();
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Toast.MakeText(this, "Funciona el botón Delete", ToastLength.Short).Show();
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Toast.MakeText(this, "Funciona el botón Search", ToastLength.Short).Show();
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            /*Intent i = new Intent(this, typeof(Welcome));
-            StartActivity(i);*/
-            SetContentView(Resource.Layout.Welcome);
+            Intent i = new Intent(this, typeof(Welcome));
+            StartActivity(i);
+            
         }
     }
 }

@@ -36,39 +36,34 @@ namespace Tracking
             switch (item.ItemId)
             {
                 case Resource.Id.icAdd:
-                    /*Intent i = new Intent(this, typeof(AddUser));
-                    StartActivity(i*/
-                    SetContentView(Resource.Layout.AddUser);
+                    Intent i = new Intent(this, typeof(AddUser));
+                    StartActivity(i);
                     break;
 
                 case Resource.Id.icAdd2:
-                    /*Intent j = new Intent(this, typeof(Create_OC));
-                    StartActivity(j);*/
-                    SetContentView(Resource.Layout.Create_OC);
+                    Intent j = new Intent(this, typeof(Create_OC));
+                    StartActivity(j);
                     break;
 
                 case Resource.Id.icAdd3:
-                    /*Intent a = new Intent(this, typeof(contact));
-                    StartActivity(a);*/
-                    SetContentView(Resource.Layout.Proveedores);
+                    Intent a = new Intent(this, typeof(Proveedores));
+                    StartActivity(a);
                     break;
 
                 case Resource.Id.icAdd4:
-                    /*Intent b = new Intent(this, typeof(contact));
-                    StartActivity(b);*/
-                    SetContentView(Resource.Layout.Ventas);
+                    Intent b = new Intent(this, typeof(Ventas));
+                    StartActivity(b);
                     break;
 
                 case Resource.Id.icAdd5:
-                    /*Intent c = new Intent(this, typeof(contact));
-                    StartActivity(c);*/
-                    SetContentView(Resource.Layout.Productos);
+                    Intent c = new Intent(this, typeof(Productos));
+                    StartActivity(c);
+                    //SetContentView(Resource.Layout.Productos);
                     break;
 
                 case Resource.Id.icAdd6:
-                    /*Intent d = new Intent(this, typeof(contact));
-                    StartActivity(d);*/
-                    SetContentView(Resource.Layout.contact);
+                    Intent d = new Intent(this, typeof(contact));
+                    StartActivity(d);
                     break;
 
                 default:

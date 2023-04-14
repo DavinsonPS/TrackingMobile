@@ -22,6 +22,7 @@ namespace Tracking
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Create_OC);
             txtNitProveedor = FindViewById<EditText>(Resource.Id.txtNitProveedor);
             txtNumberOC = FindViewById<EditText>(Resource.Id.txtOC);
             btnAcept = FindViewById<Button>(Resource.Id.btnSend);
@@ -36,21 +37,21 @@ namespace Tracking
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            /*Intent i = new Intent(this, typeof(Welcome));
-            StartActivity(i);*/
-            SetContentView(Resource.Layout.Welcome);
+            Intent i = new Intent(this, typeof(Welcome));
+            StartActivity(i);
+            
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            /*Intent i = new Intent(this, typeof(Create_OC));
-            StartActivity(i);*/
-            SetContentView(Resource.Layout.Welcome);
+            Intent i = new Intent(this, typeof(Welcome));
+            StartActivity(i);
+
         }
 
         private void BtnAcept_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Toast.MakeText(this, "Funciona el botón aceptar", ToastLength.Short).Show();
         }
     }
 }

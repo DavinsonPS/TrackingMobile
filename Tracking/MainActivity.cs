@@ -14,8 +14,7 @@ namespace Tracking
         EditText txtPassword;
         Button btnLogin;
         Button btnRegister;
-        string user;
-        string password;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,8 +25,6 @@ namespace Tracking
             txtUsuario = FindViewById<EditText>(Resource.Id.txtUserName);
             btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnRegister = FindViewById<Button>(Resource.Id.btnRegisterUser);
-            user = "admin";
-            password= "admin";
 
             btnLogin.Click += BtnLogin_Click;
             btnRegister.Click += BtnRegister_Click;
@@ -35,14 +32,14 @@ namespace Tracking
 
         private void BtnRegister_Click(object sender, System.EventArgs e)
         {
-            SetContentView(Resource.Layout.AddUser);
-            /*Intent i = new Intent(this, typeof(AddUser));
-            StartActivity(i);*/
+            //SetContentView(Resource.Layout.AddUser);
+            Intent i = new Intent(this, typeof(AddUser));
+            StartActivity(i);
         }
 
         private void BtnLogin_Click(object sender, System.EventArgs e)
         {
-            if(txtUsuario.Text == user && txtPassword.Text == password)
+           /* if(txtUsuario.Text == user && txtPassword.Text == password)
             {
                 Intent i = new Intent(this, typeof(Welcome));
                 StartActivity(i);
@@ -52,9 +49,9 @@ namespace Tracking
             {
                 Toast.MakeText(this, "Nombre de usuario y/o clave inválida(s)", ToastLength.Long).Show();
             }
+           */
 
-
-            /*try
+            try
             {
                 Login resultado = null;
                 if (!string.IsNullOrEmpty(txtUsuario.Text.Trim()) && !string.IsNullOrEmpty(txtPassword.Text.Trim()))
@@ -80,10 +77,10 @@ namespace Tracking
                 }
 
             }
-            catch
+            catch (System.Exception ex)
             {
-
-            }*/
+                Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
+            }
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

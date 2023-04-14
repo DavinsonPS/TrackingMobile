@@ -79,6 +79,7 @@
                 android:layout_marginLeft="100dp"
                 android:layout_width="96.5dp"
                 android:layout_height="wrap_content"
+                
                 android:id="@+id/btnDelete" />
 
             <Button
@@ -206,17 +207,20 @@
     </TableLayout>
 
     <Button
-        android:text="SELL"
-        android:layout_width="match_parent"
+        android:text="Sell"
+        android:layout_marginLeft="105dp"
+        android:layout_width="167.5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btnSell" />
+        android:background="#04B404"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnCancelC" />
 
     <Button
-        android:text="Cancel"
-        android:layout_width="match_parent"
+        android:text="@android:string/cancel"
+        android:layout_marginLeft="105dp"
+        android:layout_width="167.5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btnCancel" />
-
-
+        android:background="#FF0000"
+        android:id="@+id/btnCancelV" />
 
 </LinearLayout>

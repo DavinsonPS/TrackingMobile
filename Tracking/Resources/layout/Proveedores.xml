@@ -28,7 +28,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtTitleName" />
+        android:id="@+id/lblTitleName" />
 
     <EditText
         android:inputType="number"
@@ -44,21 +44,38 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtTitleNameProv" />
+        android:id="@+id/lblTitleNameProv" />
 
     <EditText
         android:inputType="text"
         android:layout_marginLeft="30dp"
-        android:layout_width="163dp"
+        android:layout_width="200dp"
         android:layout_height="29.5dp"
         android:layout_marginBottom="30dp"
         android:id="@+id/txtNameProv" />
+
+    <TextView
+        android:text="Description"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDesProv" />
+
+    <EditText
+        android:inputType="text"
+        android:layout_marginLeft="30dp"
+        android:layout_width="280dp"
+        android:layout_height="29.5dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/txtDesProv" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#086A87"
         android:layout_marginBottom="20dp"
+        android:textAlignment="center"
         android:orientation="horizontal">
 
         <Button
@@ -67,6 +84,7 @@
             android:layout_marginStart="10dp"
             android:layout_width="95.5dp"
             android:layout_height="wrap_content"
+            
             android:id="@+id/btnSearch" />
 
         <Button
@@ -74,6 +92,7 @@
             android:layout_marginLeft="10dp"
             android:layout_width="83.0dp"
             android:layout_height="wrap_content"
+            
             android:id="@+id/btnDelete" />
 
         <Button
@@ -81,6 +100,7 @@
             android:layout_marginLeft="10dp"
             android:layout_width="83.0dp"
             android:layout_height="wrap_content"
+            
             android:id="@+id/btnAdd" />
     </LinearLayout>
 

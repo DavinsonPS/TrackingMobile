@@ -161,17 +161,25 @@
 
         <Button
             android:text="Delete"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="50dp"
             android:layout_width="83.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btnDelete" />
+            android:id="@+id/btnDeleteP" />
 
         <Button
             android:text="Add"
             android:layout_marginLeft="10dp"
             android:layout_width="83.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btnAdd" />
+            android:id="@+id/btnAddP" />
+
+        <Button
+            android:text="Consult"
+            android:layout_marginLeft="10dp"
+            android:layout_width="99.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConsultP" />
+
     </LinearLayout>
 
     <TableLayout
@@ -292,19 +300,5 @@
         </TableRow>
         
     </TableLayout>
-
-    <Button
-        android:text="Cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1" />
-
-    <Button
-        android:text="Acept"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnAcept" />
-
-
 
 </LinearLayout>

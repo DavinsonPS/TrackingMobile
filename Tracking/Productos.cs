@@ -17,8 +17,16 @@ namespace Tracking
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.Productos);
             // Create your application here
+            Button btnHome = FindViewById<Button>(Resource.Id.btnHome);
+            btnHome.Click += BtnHome_Click;
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            Intent i = new Intent(this, typeof(Welcome));
+            StartActivity(i);
         }
     }
 }

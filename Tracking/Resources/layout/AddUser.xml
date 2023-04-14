@@ -23,7 +23,7 @@
             android:id="@+id/txtTitleName" />
 
         <EditText
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             android:layout_marginLeft="80dp"
             android:layout_width="222.0dp"
             android:layout_height="wrap_content"
@@ -51,6 +51,8 @@
             android:layout_marginLeft="100dp"
             android:layout_width="178.0dp"
             android:layout_height="50dp"
+            android:background="#04B404"
+            android:layout_marginBottom="10dp"
             android:id="@+id/btnNewUser" />
 
         <Button
@@ -58,6 +60,7 @@
             android:layout_marginLeft="100dp"
             android:layout_width="178.0dp"
             android:layout_height="50dp"
+            android:background="#FF0000"
             android:id="@+id/btnCancel" />
 
 </LinearLayout>
