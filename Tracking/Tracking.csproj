@@ -70,6 +70,7 @@
     <Compile Include="Notification.cs" />
     <Compile Include="Productos.cs" />
     <Compile Include="Proveedores.cs" />
+    <Compile Include="updateU.cs" />
     <Compile Include="Ventas.cs" />
     <Compile Include="Welcome.cs" />
     <Compile Include="MainActivity.cs" />
@@ -160,6 +161,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Notifications.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\updateUsers.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

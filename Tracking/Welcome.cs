@@ -21,7 +21,7 @@ namespace Tracking
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Welcome);
             toolbarmenu = FindViewById<Toolbar>(Resource.Id.toolbarMenu);
-
+            
             SetActionBar(toolbarmenu);
             ActionBar.Title = "Menu";
         }
@@ -58,12 +58,21 @@ namespace Tracking
                 case Resource.Id.icAdd5:
                     Intent c = new Intent(this, typeof(Productos));
                     StartActivity(c);
-                    //SetContentView(Resource.Layout.Productos);
                     break;
 
                 case Resource.Id.icAdd6:
                     Intent d = new Intent(this, typeof(contact));
                     StartActivity(d);
+                    break;
+
+                case Resource.Id.icAdd7:
+                    Intent e = new Intent(this, typeof(Notification));
+                    StartActivity(e);
+                    break;
+
+                case Resource.Id.icAdd8:
+                    Intent f = new Intent(this, typeof(updateU));
+                    StartActivity(f);
                     break;
 
                 default:

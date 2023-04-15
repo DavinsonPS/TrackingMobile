@@ -85,6 +85,14 @@ namespace Tracking
             return conexionAuxiliar;
         }
 
+        public Login Consulta(int Id)
+        {
+            lock (locker)
+            {
+                return conexion.Table<Login>().FirstOrDefault(x => x.Id == Id);
+            }
+        }
+
         #region Manejo de los datos Login
         //El manejo de los datos
         //Seleccionar todo

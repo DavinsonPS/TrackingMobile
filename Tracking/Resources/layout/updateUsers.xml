@@ -4,15 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-      <TextView
-            android:text="REGISTER"
+    <TextView
+            android:text="USERS"
             android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="80dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:id="@+id/textTitleApp2"
-            android:layout_marginBottom="80dp"/>
+            android:id="@+id/lblUsers"
+            />
+
+        <TextView
+            android:text="Id"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTitleName" />
+
+        <EditText
+            android:inputType="number"
+            android:layout_marginLeft="80dp"
+            android:layout_width="222.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtId" />    
 
         <TextView
             android:text="User Name"
@@ -20,14 +36,14 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtTitleName" />
+            android:id="@+id/lblUserName" />
 
         <EditText
-            android:inputType="textMultiLine"
+            android:inputType="textPersonName"
             android:layout_marginLeft="80dp"
             android:layout_width="222.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtNewUserName" />
+            android:id="@+id/txtUser" />
 
         <TextView
             android:text="Password"
@@ -35,42 +51,35 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textTitlePassword" />
+            android:id="@+id/lblPassword" />
 
-        <EditText
-            android:inputType="textPassword"
+         <EditText
+            android:inputType="text"
             android:layout_marginLeft="80dp"
             android:layout_width="214.5dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtNewPassword"
-            android:layout_marginBottom="40dp"/>
+            android:id="@+id/txtPasswordUser" />
 
 
         <Button
-            android:text="Register User"
+            android:text="Consult"
+            android:layout_marginLeft="100dp"
+            android:layout_width="178.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConsul" />
+
+        <Button
+            android:text="Delete"
             android:layout_marginLeft="100dp"
             android:layout_width="178.0dp"
             android:layout_height="50dp"
-            android:backgroundTint="#04B404"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/btnNewUser" />
+            android:id="@+id/btnDelete" />
 
         <Button
             android:text="Update"
             android:layout_marginLeft="100dp"
             android:layout_width="178.0dp"
             android:layout_height="50dp"
-            android:backgroundTint="#2E9AFE"
-            android:visibility="gone"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/btnUpdateUser" />
-
-        <Button
-            android:text="Cancel"
-            android:layout_marginLeft="100dp"
-            android:layout_width="178.0dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#FF0000"
-            android:id="@+id/btnCancel" />
+            android:id="@+id/btnUpdate" />
 
 </LinearLayout>

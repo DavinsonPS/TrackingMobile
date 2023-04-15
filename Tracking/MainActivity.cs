@@ -32,28 +32,15 @@ namespace Tracking
 
         private void BtnRegister_Click(object sender, System.EventArgs e)
         {
-            //SetContentView(Resource.Layout.AddUser);
             Intent i = new Intent(this, typeof(AddUser));
             StartActivity(i);
         }
 
         private void BtnLogin_Click(object sender, System.EventArgs e)
         {
-           /* if(txtUsuario.Text == user && txtPassword.Text == password)
-            {
-                Intent i = new Intent(this, typeof(Welcome));
-                StartActivity(i);
-                
-            }
-            else
-            {
-                Toast.MakeText(this, "Nombre de usuario y/o clave inválida(s)", ToastLength.Long).Show();
-            }
-           */
-
             try
             {
-                Login resultado = null;
+               Login resultado = null;
                 if (!string.IsNullOrEmpty(txtUsuario.Text.Trim()) && !string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
                     resultado = new Auxiliar().SeleccionarUno(txtUsuario.Text.Trim(), txtPassword.Text.Trim());

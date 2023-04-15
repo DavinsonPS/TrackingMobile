@@ -20,6 +20,7 @@ namespace Tracking
         EditText txtNuevaClaveUsuario;
         Button btnRegistrarUsuario;
         Button btnCancel;
+        Button btnUpdate;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,9 +29,11 @@ namespace Tracking
             txtNuevaClaveUsuario = FindViewById<EditText>(Resource.Id.txtNewPassword);
             btnRegistrarUsuario = FindViewById<Button>(Resource.Id.btnNewUser);
             btnCancel = FindViewById<Button>(Resource.Id.btnCancel);
+            btnUpdate = FindViewById<Button>(Resource.Id.btnUpdateUser);
 
             btnRegistrarUsuario.Click += BtnRegistrarUsuario_Click;
             btnCancel.Click += BtnCancel_Click;
+            //btnUpdate.Visibility = ViewStates.Visible;
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

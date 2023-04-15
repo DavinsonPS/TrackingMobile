@@ -18,4 +18,10 @@
 	<item
 	  android:id="@+id/icAdd6"
 	  android:title="Contac" />
+	<item
+	  android:id="@+id/icAdd7"
+	  android:title="Notifications" />
+	<item
+	  android:id="@+id/icAdd8"
+	  android:title="Update Users" />
 </menu>
