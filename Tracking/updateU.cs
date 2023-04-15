@@ -127,7 +127,8 @@ namespace Tracking
                     else
                     {
                         Toast.MakeText(this, "No se han encontrado datos asociados al Id", ToastLength.Long).Show();
-                        Recreate();
+                        txtUser.Text = "";
+                        txtPassword.Text = "";
                     }
                 }
                 else
